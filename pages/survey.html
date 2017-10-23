@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder - Survey</title>
+
+<!-- jQuery CDN -->
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+  	</script>
+
+<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Font awesome CDN -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Chosen CDN -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Include same jumbotron and then form submissions with name, photo, and 10 questions -->
+<div class = "container">
+	<div class = "page-header">
+		<h2>Survey Questions</h2>
+	</div>
+	
+	<h3>About You</h3>
+	<form>
+	  <div class="form-group">
+	    <label for="name">Name (Required)</label>
+	    <input type="text" class="form-control" id="name" placeholder="First Last">
+	  </div>
+	   <div class="form-group"> 
+	    <label for="picture">Link to Photo (Required)</label>
+	    <input type="text" class="form-control" id="picture" placeholder="photo.webpage.host">
+	  </div>
+		
+	<h4>1= Strong Disagree, 3 = Neutral, 5 = Strongly Agree</h4>
+	  <div class="form-group">
+	  	<h3>Question 1</h3>
+	    <label for="q1">QUESTION 1 TEXT.....</label>
+	    <select class="form-control questions" id="q1" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	  <div class="form-group">
+	  	<h3>Question 2</h3>
+	    <label for="q2">QUESTION 2 TEXT......</label>
+	    <select class="form-control questions" id="q2" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	  <div class="form-group">
+	  	<h3>Question 3</h3>
+	    <label for="q3">QUESTION 3 TEXT.....</label>
+	    <select class="form-control questions" id="q3" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>	  
+	  <div class="form-group">
+	  	<h3>Question 4</h3>
+	    <label for="q4">QUESTION 4 TEXT.....</label>
+	    <select class="form-control questions" id="q4" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>	
+	  <div class="form-group">
+	  	<h3>Question 5</h3>
+	    <label for="q5">QUESTION 5 TEXT.....</label>
+	    <select class="form-control questions" id="q5" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>	
+	  <div class="form-group">
+	  	<h3>Question 6</h3>
+	    <label for="q6">QUESTION 6 TEXT.....</label>
+	    <select class="form-control questions" id="q6" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>	
+	  <div class="form-group">
+	  	<h3>Question 7</h3>
+	    <label for="q7">QUESTION 7 TEXT.....</label>
+	    <select class="form-control questions" id="q7" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	  <div class="form-group">
+	  	<h3>Question 8</h3>
+	    <label for="q8">QUESTION 8 TEXT.....</label>
+	    <select class="form-control questions" id="q8" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>		  		
+	  <div class="form-group">
+	  	<h3>Question 9</h3>
+	    <label for="q9">QUESTION 9 TEXT.....</label>
+	    <select class="form-control questions" id="q9" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>
+	  <div class="form-group">
+	  	<h3>Question 10</h3>
+	    <label for="q10">QUESTION 10 TEXT.....</label>
+	    <select class="form-control questions" id="q10" data-placeholder = "Choose your answer">
+	      <option> </option>
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	    </select>
+	  </div>		  		  
+
+	<button class = "btn btn-primary" id="submitSurvey"><i class="fa fa-paper-plane" aria-hidden="true"></i>Submit Form</button>
+	</form>
+
+<br>
+<br>
+<br>
+<a href="" target = " ">API LINK</a> <span><strong>||</strong></span>
+<a href="" target = " ">GitHub Repo</a>
+
+</div>
+
+<script type="text/javascript">
+
+	$(".questions").chosen()
+
+	$("#submitSurvey").on("click", function(event){
+		event.preventDefault();
+
+		function validForm(){
+			var complete = true;
+			$(".form-control").each(function(){
+				if($(this).val() === ""){
+					complete = false;
+				}
+			});
+
+			$(".questions").each(function(){
+				if($(this).val() === ""){
+					complete = false;
+				}
+			});
+			return complete;
+		}
+		validForm();
+
+		if(validForm()){
+			var userData = {
+				name: $("#name").val().trim(),
+				picture: $("#picture").val().trim(),
+				scores: [
+					$("#q1").val(),
+					$("#q2").val(),
+					$("#q3").val(),
+					$("#q4").val(),
+					$("#q5").val(),
+					$("#q6").val(),
+					$("#q7").val(),
+					$("#q8").val(),
+					$("#q9").val(),
+					$("#q10").val(),
+					]
+
+			};
+
+			var myURL = window.location.origin;
+
+			$.ajax({
+				url: "api/add",
+				method: "POST",
+				data: userData
+			}).done(function(data){
+				console.log(data);
+			})
+		}
+
+		$.ajax({
+			url: "api/friends",
+			method: "GET"
+		}).done(function(data){
+			var readOut = JSON.stringify(data);
+			var output = JSON.parse(readOut);
+
+			console.log(output);
+		})
+		
+	})
+
+
+
+</script>
+
+
+</body>
+</html>
