@@ -62,9 +62,12 @@ app.get("/api/friends", function(req, res){
 
 app.post("/api/add", function(req, res){
 	var newFriend = req.body;
-
+	// console.log(newFriend);
 	myFriends.push(newFriend);
+	// console.log(myFriends);
+
 	res.json(newFriend);
+
 	
 //app.post creates the logic for matching friends
 	//need to create an object to hold new friend data- name, photo, scores
