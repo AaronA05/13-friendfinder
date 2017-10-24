@@ -22,7 +22,12 @@ var myFriends = [
 			4,
 			3,
 			2,
-			1
+			1,
+			2,
+			4,
+			5,
+			1,
+			3
 		]
 	},
 	{
@@ -33,7 +38,12 @@ var myFriends = [
 			3,
 			5,
 			5,
-			5
+			5,
+			3,
+			1,
+			2,
+			4,
+			3
 		]
 	}
 ]
@@ -55,6 +65,7 @@ app.post("/api/add", function(req, res){
 
 	myFriends.push(newFriend);
 	res.json(newFriend);
+	
 //app.post creates the logic for matching friends
 	//need to create an object to hold new friend data- name, photo, scores
 
