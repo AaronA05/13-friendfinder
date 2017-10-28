@@ -3,9 +3,6 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 
-
-
-
 var app = express();
 
 var PORT = process.env.PORT || 3000;
@@ -15,65 +12,35 @@ app.use(bodyParser.json());
 
 var myFriends = [
 	{
-		name: "Jordan Johns",
-		picture: "url.com",
-		scores: [
-			1,
-			4,
-			3,
-			2,
-			1,
-			2,
-			4,
-			5,
-			1,
-			3
-		]
-	},
-	{
-		name: "Aaron Arndt",
-		picture: "aaron.url.com",
-		scores: [
-			2,
-			3,
-			5,
-			5,
-			5,
-			3,
-			1,
-			2,
-			4,
-			3
-		]
+		"name": "No one submitted yet :(",
+		"picture": "",
+		"scores": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
 	}
-]
+];
 
+//route to show the survey html page
 app.get("/survey", function(req, res){
 	res.sendFile(path.join(__dirname + "/pages/survey.html"));
 });
 
+//route to show the home page
 app.get("/", function(req, res){
 	res.sendFile(path.join(__dirname + "/pages/home.html"));
 });
 
+//route to show all the friends currently passed to the API
 app.get("/api/friends", function(req, res){
 	res.json(myFriends);
 });
 
+//route that handles the addition of the new user and pushes to the array of myfriends
 app.post("/api/add", function(req, res){
 	var newFriend = req.body;
-	// console.log(newFriend);
 	myFriends.push(newFriend);
-	// console.log(myFriends);
 
 	res.json(newFriend);
 
-	
-//app.post creates the logic for matching friends
-	//need to create an object to hold new friend data- name, photo, scores
-
-
-})
+});
 
 	
 

@@ -10,13 +10,19 @@
 	  crossorigin="anonymous">
   	</script>
 
+<!-- Scripts to get my modal to work (from W3 Schools) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <!-- Bootstrap CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Font awesome CDN -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Chosen CDN -->
+<!-- Chosen CSS Add-on CDN -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.js"></script>
 
@@ -25,7 +31,7 @@
 </head>
 <body>
 
-<!-- Include same jumbotron and then form submissions with name, photo, and 10 questions -->
+<!-- Container for all survey questions -->
 <div class = "container">
 	<div class = "page-header">
 		<h2>Survey Questions</h2>
@@ -33,6 +39,7 @@
 	
 	<h3>About You</h3>
 	<form>
+		<!-- Survey form --> 
 	  <div class="form-group">
 	    <label for="name">Name (Required)</label>
 	    <input type="text" class="form-control" id="name" placeholder="First Last">
@@ -41,11 +48,13 @@
 	    <label for="picture">Link to Photo (Required)</label>
 	    <input type="text" class="form-control" id="picture" placeholder="photo.webpage.host">
 	  </div>
-		
-	<h4>1= Strong Disagree, 3 = Neutral, 5 = Strongly Agree</h4>
+
+		<!-- Questions for form -->
+	<h4>Fill out this survey to find your best friend!</h4>
+	<h4>1= Strongly Disagree, 3 = Neutral, 5 = Strongly Agree</h4>
 	  <div class="form-group">
 	  	<h3>Question 1</h3>
-	    <label for="q1">QUESTION 1 TEXT.....</label>
+	    <label for="q1">I find it hard to relate to other peopple:</label>
 	    <select class="form-control questions" id="q1" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -57,7 +66,7 @@
 	  </div>
 	  <div class="form-group">
 	  	<h3>Question 2</h3>
-	    <label for="q2">QUESTION 2 TEXT......</label>
+	    <label for="q2">Moments of silence make me uncomfortable:</label>
 	    <select class="form-control questions" id="q2" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -69,7 +78,7 @@
 	  </div>
 	  <div class="form-group">
 	  	<h3>Question 3</h3>
-	    <label for="q3">QUESTION 3 TEXT.....</label>
+	    <label for="q3">I enjoy the little things in life:</label>
 	    <select class="form-control questions" id="q3" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -81,7 +90,7 @@
 	  </div>	  
 	  <div class="form-group">
 	  	<h3>Question 4</h3>
-	    <label for="q4">QUESTION 4 TEXT.....</label>
+	    <label for="q4">Family is most important:</label>
 	    <select class="form-control questions" id="q4" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -93,7 +102,7 @@
 	  </div>	
 	  <div class="form-group">
 	  	<h3>Question 5</h3>
-	    <label for="q5">QUESTION 5 TEXT.....</label>
+	    <label for="q5">Money is most important:</label>
 	    <select class="form-control questions" id="q5" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -105,7 +114,7 @@
 	  </div>	
 	  <div class="form-group">
 	  	<h3>Question 6</h3>
-	    <label for="q6">QUESTION 6 TEXT.....</label>
+	    <label for="q6">Power is most important:</label>
 	    <select class="form-control questions" id="q6" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -117,7 +126,7 @@
 	  </div>	
 	  <div class="form-group">
 	  	<h3>Question 7</h3>
-	    <label for="q7">QUESTION 7 TEXT.....</label>
+	    <label for="q7">When I do a good job at work I would rather be paid more than publicly recognized:</label>
 	    <select class="form-control questions" id="q7" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -129,7 +138,7 @@
 	  </div>
 	  <div class="form-group">
 	  	<h3>Question 8</h3>
-	    <label for="q8">QUESTION 8 TEXT.....</label>
+	    <label for="q8">Spending time outdoors everyday is important: </label>
 	    <select class="form-control questions" id="q8" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -141,7 +150,7 @@
 	  </div>		  		
 	  <div class="form-group">
 	  	<h3>Question 9</h3>
-	    <label for="q9">QUESTION 9 TEXT.....</label>
+	    <label for="q9">Most people would say I am easy to work with:</label>
 	    <select class="form-control questions" id="q9" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -153,7 +162,7 @@
 	  </div>
 	  <div class="form-group">
 	  	<h3>Question 10</h3>
-	    <label for="q10">QUESTION 10 TEXT.....</label>
+	    <label for="q10">I love these types of quizzes!!</label>
 	    <select class="form-control questions" id="q10" data-placeholder = "Choose your answer">
 	      <option> </option>
 	      <option>1</option>
@@ -164,24 +173,56 @@
 	    </select>
 	  </div>		  		  
 
-	<button class = "btn btn-primary" id="submitSurvey"><i class="fa fa-paper-plane" aria-hidden="true"></i>Submit Form</button>
+	<button class = "btn btn-primary" id="submitSurvey" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Submit Form</button>
 	</form>
+
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Your Best Friend Is....</h4>
+        </div>
+        <div class="modal-body">
+          <div id = "friend-name">
+          </div>
+          <div id = "friend-picture">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="close-modal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
 
 <br>
 <br>
 <br>
-<a href="" target = " ">API LINK</a> <span><strong>||</strong></span>
-<a href="" target = " ">GitHub Repo</a>
+<a href="/api/friends" target = " ">API LINK</a> <span><strong>||</strong></span>
+<a href="https://github.com/AaronA05/13-friendfinder" target = " ">GitHub Repo</a>
 
 </div>
 
 <script type="text/javascript">
 
+	//this allows my user submission form to go through with the proper array 
+	jQuery.ajaxSettings.traditional = true;
+
+	//provides better formatting for the survey questions
 	$(".questions").chosen()
 
+	//on submit survey button capture user input, pass to API, grab info from API and compare against user submission
 	$("#submitSurvey").on("click", function(event){
+
 		event.preventDefault();
 
+		//requires all questions to be answered before allowing the form to be submitted
 		function validForm(){
 			var complete = true;
 			$(".form-control").each(function(){
@@ -199,11 +240,10 @@
 		}
 		validForm();
 
+
 		if(validForm()){
-			var userData = {
-				"name": $("#name").val().trim(),
-				"picture": $("#picture").val().trim(),
-				"scores": [
+			//capture all values of the user survey answers to pass to the userData object
+			var myScores = [
 					$("#q1").val(),
 					$("#q2").val(),
 					$("#q3").val(),
@@ -214,30 +254,100 @@
 					$("#q8").val(),
 					$("#q9").val(),
 					$("#q10").val()
-					]
+				];
 
+			//all of the user information set in a object to pass to the API POST route
+			var userData = {
+				"name": $("#name").val().trim(),
+				"picture": $("#picture").val().trim(),
+				"scores": myScores
 			};
 
-			var myURL = window.location.origin;
+			// var myURL = window.location.origin;
 
+			//post route to API, passing user data as the data
 			$.ajax({
-				url: "api/add",
+				url: "/api/add",
 				method: "POST",
 				data: userData
 			}).done(function(data){
-				console.log(data);
+
+				//once data has been posted to the API this will grab the data to execute the rest of the functionality
+				$.ajax({
+					url: "/api/friends",
+					method: "GET"
+				}).done(function(result){
+					
+					//empty object to compare the user submission and then store the best friend data if scores are close
+					var bestFriend = {
+						"name": "",
+						"picture": "",
+						"friendScore": 5000
+					};
+
+					//variable which will store the calculation of the difference between user score and all other friend scores
+					var friendDiff = 0;
+
+					//for loop to go through all the friends information current on the API
+					//reduced by one so as to not to include the last user submitted in the comparison
+					for (var i = 0; i < (result.length - 1); i++){
+
+						//declaring the variable within the for loop to start a new comparison each time through the loop
+						friendDiff = 0;
+
+						//for loop to go through and compare the user score to all other friend scores on the API
+						for(var k = 0; k < result[i].scores.length; k++){
+							
+							//turns the user score and friend score into numbers, not strings
+							var friendScore = parseFloat(result[i].scores[k]);
+							var myScore = parseFloat(data.scores[k]);
+
+							// //this will console log the scores and double check the calculation of each question score
+							// console.log("User: " + result[i].name);
+							// console.log("User Score " + i + " -- " + friendScore);
+							// console.log("New User: " + data.name);
+							// console.log("New Score: " + k + " -- " + myScore);
+							
+							//keeps track of the difference between the user score and each friend score to compare and find best friend
+							friendDiff += Math.abs(myScore - friendScore);
+
+							// //This will check to make sure the best friend calculation is working
+							// console.log("Score for " + result[i].name + " and " + data.name + " -- " + newScore);
+
+						
+
+						}
+
+						//tracks the user scores for each friend and finds the one with the lowest difference in score
+						//stores the data of that friend as the new user's best friend to pass to the modal
+						if(friendDiff <= bestFriend.friendScore){
+							bestFriend.friendScore = friendDiff;
+							bestFriend.name = result[i].name;
+							bestFriend.picture = result[i].picture;
+						}		
+						
+									
+					}
+
+					//takes the best friend information and pass it to the modal
+					$("#friend-name").html("<h3>" + bestFriend.name + "</h3>");
+					var friendPicture = $("<img>");
+					friendPicture.attr("src", bestFriend.picture);
+					$("#friend-picture").append(friendPicture);
+
+					//calls the modal once the information has been passed
+					$("#myModal").modal();
+
+					//when user closes the modal it should reload the page so a new user form can be submitted
+					$("#close-modal").on("click", function(event){
+						event.preventDefault();
+						location.reload();
+					})
+
+				})
+				
 			})
 		}
-
-		$.ajax({
-			url: "api/friends",
-			method: "GET"
-		}).done(function(data){
-			var readOut = JSON.stringify(data);
-			var output = JSON.parse(readOut);
-
-			console.log(output);
-		})
 		
 	})
 
@@ -247,4 +357,4 @@
 
 
 </body>
-</html>
+</html>	
