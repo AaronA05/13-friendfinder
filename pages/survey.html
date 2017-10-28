@@ -333,6 +333,8 @@
 					$("#friend-name").html("<h3>" + bestFriend.name + "</h3>");
 					var friendPicture = $("<img>");
 					friendPicture.attr("src", bestFriend.picture);
+					friendPicture.attr("height", "75");
+					friendPicture.attr("width", "75");
 					$("#friend-picture").append(friendPicture);
 
 					//calls the modal once the information has been passed
